@@ -127,8 +127,10 @@ class _MusicState extends State<Music> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15),
-              child: TextButton(
+              padding: const EdgeInsets.all(30),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
@@ -137,9 +139,10 @@ class _MusicState extends State<Music> {
                     style: TextStyle(
                         fontSize: 30
                     ),
-                  )
+                  ),
+                ),
               ),
-            ),
+            )
           ],
         ),
       ),

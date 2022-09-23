@@ -60,18 +60,20 @@ class _FreqWordsState extends State<FreqWords> {
                     onTap: () async {
                       await launchUrlString("https://www.nikkei.com/article/DGXZQOUA060VB0W1A201C2000000/");
                     },
-                    child: const Text(
-                      "https://www.nikkei.com/article/DGXZQOUA060VB0W1A201C2000000/",
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.blueAccent,
+                    child: const FittedBox(
+                      child: Text(
+                        "https://www.nikkei.com/article/DGXZQOUA060VB0W1A201C2000000/",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.blueAccent,
+                        ),
                       ),
                     ),
                   ),
                   const SizedBox(
                     //color:Colors.blue,
                     width: 300,
-                    height: 300,
+                    height: 200,
                     child: Image(image: AssetImage("assets/images/example_WordCloud.jpg"),
                       fit: BoxFit.cover,
                     ),

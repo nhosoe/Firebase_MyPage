@@ -57,10 +57,15 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  assets:
+    - assets/images/kinkazan.jpg
+    - assets/images/profile.jpg
+    - assets/images/komeda.jpg
+    - assets/images/example_WordCloud.jpg
+
   fonts:
     - family: YuseiMagic
       fonts:

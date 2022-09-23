@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-class FreqWords extends StatefulWidget {
-  const FreqWords({Key? key}) : super(key: key);
+class Adlib extends StatefulWidget {
+  const Adlib({Key? key}) : super(key: key);
 
   @override
-  State<FreqWords> createState() => _FreqWordsState();
+  State<Adlib> createState() => _AdlibState();
 }
 
-class _FreqWordsState extends State<FreqWords> {
+class _AdlibState extends State<Adlib> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +20,7 @@ class _FreqWordsState extends State<FreqWords> {
               child: FittedBox(
                 fit: BoxFit.fitWidth,
                 child: Text(
-                  "コメダ珈琲店　スマホサイト制作",
+                  "アドリブ演奏練習用Webサイト",
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                     decorationStyle: TextDecorationStyle.double,
@@ -32,9 +32,9 @@ class _FreqWordsState extends State<FreqWords> {
             const Padding(
               padding: EdgeInsets.only(top: 30, right: 30, left: 30),
               child: Text(
-                "市場に出ている自動車において、搭載されているカーナビでユーザーからディーラーへ報告されている\n"
-                    "不具合を一覧化したデータ・報告文章の中から頻出単語を調査し、どの機能で不具合の量\n"
-                    "多いかを定量的に解析。これにより、不具合の修正にあたり優先度の判断基準につながった。",
+                "ジャズで演奏されるアドリブ演奏の練習用として、ピアノの先生のご助言を頂いてサイトを制作。\n"
+                    "アメリカの音楽大学では\"フラッシュカード\"と呼ばれる手法でアドリブ練習をすることがあり、\n"
+                    "それを物理的なカードではなくWebブラウザの画面上に映し出している。",
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -47,33 +47,23 @@ class _FreqWordsState extends State<FreqWords> {
                 children: [
                   const Padding(
                     padding: EdgeInsets.only(top: 30.0),
-                    child: FittedBox(
-                      child: Text(
-                        "※実際の結果はお客様の機密情報で提示できないためイメージ図",
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
+                    child:  Text(
+                      "Webサイトへのリンク",
+                      style: TextStyle(
+                        fontSize: 16,
                       ),
                     ),
                   ),
                   InkWell(
                     onTap: () async {
-                      await launchUrlString("https://www.nikkei.com/article/DGXZQOUA060VB0W1A201C2000000/");
+                      await launchUrlString("http://pepe-nari.pepper.jp/");
                     },
                     child: const Text(
-                      "https://www.nikkei.com/article/DGXZQOUA060VB0W1A201C2000000/",
+                      "http://pepe-nari.pepper.jp/",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.blueAccent,
                       ),
-                    ),
-                  ),
-                  const SizedBox(
-                    //color:Colors.blue,
-                    width: 300,
-                    height: 300,
-                    child: Image(image: AssetImage("assets/images/example_WordCloud.jpg"),
-                      fit: BoxFit.cover,
                     ),
                   ),
                 ],

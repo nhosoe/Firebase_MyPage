@@ -83,9 +83,9 @@ class _MusicState extends State<Music> {
                 children: [
                   InkWell(
                     onTap: () async {
-                      await launchUrlString("https://www.youtube.com/shorts/4uJMChhGc4w");
+                      await launchUrlString("https://www.youtube.com/shorts/qTwN7bj-K0g");
                     },
-                    child: Image.network(YoutubeThumbnail(youtubeId: '4uJMChhGc4w').small()),
+                    child: Image.network(YoutubeThumbnail(youtubeId: 'qTwN7bj-K0g').small()),
                   ),
                   const Padding(
                     padding: EdgeInsets.only(left:10),

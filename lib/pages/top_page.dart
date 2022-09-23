@@ -53,8 +53,8 @@ class _TopPageState extends State<TopPage> {
                   Container(
                     //width: 100,
                     //height: 100,
-                    width: MediaQuery.of(context).size.width*0.1,
-                    height: MediaQuery.of(context).size.height*0.12,
+                    width: MediaQuery.of(context).size.width*0.12,
+                    height: MediaQuery.of(context).size.height*0.18,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(

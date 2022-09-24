@@ -46,7 +46,7 @@ class _AutoworkState extends State<Autowork> {
               child: Column(
                 children: const [
                   Padding(
-                    padding: EdgeInsets.only(top: 30.0, left: 10, right:10),
+                    padding: EdgeInsets.only(top: 30, right: 30, left: 30),
                     child: FittedBox(
                       child: Text(
                         "(※)一連の工程\n"

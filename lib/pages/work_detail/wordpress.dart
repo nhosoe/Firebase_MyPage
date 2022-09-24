@@ -33,7 +33,7 @@ class _WordpressState extends State<Wordpress> {
                 padding: EdgeInsets.only(top: 30, right: 30, left: 30),
                 child: Text(
                   "自転車で街をぶらぶらのが一時ハマっていた時に作成したサイト。\n"
-                      "途中で飽きて更新が止まっています。。(ToT)",
+                      "途中で飽きて更新が止まっています。。(T-T)",
                   style: TextStyle(
                     fontSize: 16,
                   ),

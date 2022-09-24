@@ -46,15 +46,16 @@ class _AutoworkState extends State<Autowork> {
               child: Column(
                 children: const [
                   Padding(
-                    padding: EdgeInsets.only(top: 30.0),
+                    padding: EdgeInsets.only(top: 30.0, left: 10, right:10),
                     child: FittedBox(
                       child: Text(
                         "(※)一連の工程\n"
-                            "①検査したソフトバージョン、検査日時、検査実施者を記入\n        ↓\n"
-                            "②検査の際に撮影した画像を資料に貼り付けて、明るさとコントラストを調整\n        ↓\n"
-                            "③検査結果資料が複数あれば、同様に①②のフローを実行\n        ↓\n"
-                            "④検査結果資料を１つのフォルダに入れて、zip圧縮\n        ↓\n"
-                            "⑤zip圧縮したものをメールに貼り付けて、管理職へ送信",
+                            "①検査結果資料に検査実施者・日時、検査環境を記入\n        ↓\n"
+                            "②検査した証拠として撮影した画像を資料に貼り付け\n        ↓\n"
+                            "③貼り付けた画像の明るさとコントラストを修正\n        ↓\n"
+                            "④検査結果資料が複数あれば、同様に①〜③を実施\n        ↓\n"
+                            "⑤１つのフォルダに全て取りまとめて、zip圧縮\n        ↓\n"
+                            "⑥zip圧縮したものをメールに貼り付けて、管理職へ送信",
                         style: TextStyle(
                           fontSize: 16,
                         ),

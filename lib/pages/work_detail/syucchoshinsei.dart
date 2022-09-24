@@ -31,24 +31,27 @@ class _SyucchoshinseiState extends State<Syucchoshinsei> {
             const Padding(
               padding: EdgeInsets.only(top: 30, right: 30, left: 30),
               child: Text(
-                "顧客からの要望。出張申請Webシステムの入力欄が多く申請に時間がかかるから効率化してほしい、\n"
-                    "という要望に対して効率化の検討を開始。\n\n"
+                "顧客からの要望。出張申請Webシステムの入力欄が多く申請に時間がかかるので\n"
+                    "効率化してほしいという要望に対して効率化の検討を開始。\n\n"
                     "過去の申請内容を調査した結果、入力項目の内、6割は変わらず固定であることが判明。\n\n"
-                    "これに対し、Excelに事前入力して、その内容をWebシステム側へ反映・申請する\n"
-                    "ツールを作成。これにより１申請あたり30分→10分に削減することができた。",
+                    "そこで事前にExcelに入力してその内容をWebシステム側へ反映・申請する仕組みを構築。\n"
+                    "これにより１申請あたり30分→10分に削減することができた。",
                 style: TextStyle(
                   fontSize: 16,
                 ),
                 overflow: TextOverflow.clip,
               ),
             ),
-            Container(
-              width: MediaQuery.of(context).size.width*0.7,
-              height: MediaQuery.of(context).size.height*0.35,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage("assets/images/syucchoshinsei.jpg")
+            Padding(
+              padding: const EdgeInsets.only(top:10),
+              child: Container(
+                width: 380,
+                height: 230,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage("assets/images/syucchoshinsei.jpg")
+                  ),
                 ),
               ),
             ),

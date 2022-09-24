@@ -41,7 +41,7 @@ class _KinmuState extends State<Kinmu> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 30),
+              padding: EdgeInsets.only(top: 30, right: 30, left: 30),
               child: FittedBox(
                 child: Text(
                   "※機密情報で実際のシステムは提示できないため下記イメージ",
@@ -52,8 +52,8 @@ class _KinmuState extends State<Kinmu> {
               ),
             ),
             Container(
-              width: MediaQuery.of(context).size.width*0.7,
-              height: MediaQuery.of(context).size.height*0.35,
+              width: 380,
+              height: 230,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.fill,

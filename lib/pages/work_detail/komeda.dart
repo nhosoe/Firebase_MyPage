@@ -33,8 +33,8 @@ class _KomedaState extends State<Komeda> {
               padding: EdgeInsets.only(top: 30, right: 30, left: 30),
               child: Text(
                   "株式会社NTTドコモ東海と4大学との産学共同プロジェクト「NEXT COMMUNICATION FORUM 2012」に、\n"
-                      "スマートフォン企画・開発コンテストの部門に参加。\n"
-                      "応募作品687作品中、一次審査を通過し、最終審査会では敢闘賞を受賞。\n"
+                      "スマートフォン企画・開発コンテストの部門に参加。\n\n"
+                      "応募作品687作品中、一次審査を通過し、最終審査会では敢闘賞を受賞。\n\n"
                       "制作した「レンガ調デザイン」が公式サイトに採用され、2013/3/27に公開された。",
                 style: TextStyle(
                   fontSize: 16,

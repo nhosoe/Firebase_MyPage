@@ -80,9 +80,61 @@ class _ProfileState extends State<Profile> {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
-
               ),
             ),
+            const Padding(
+              padding: EdgeInsets.only(top: 50),
+              child: Text(
+                "資格",
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  fontSize: 28,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top:10, right: 20, left: 20),
+              child: Container(
+                width:400,
+                alignment: Alignment.centerLeft,
+                child: const FittedBox(
+                  fit: BoxFit.fitWidth,
+                  child: Text(
+                    "・2級ファイナンシャル・プランニング技能士",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top:10, right: 20, left: 20),
+              child: Container(
+                width:400,
+                alignment: Alignment.centerLeft,
+                child: const FittedBox(
+                  fit: BoxFit.fitWidth,
+                  child: Text(
+                    "・マクロビオティックマイスター",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top:10, right: 20, left: 20),
+              child: Container(
+                width:400,
+                alignment: Alignment.centerLeft,
+                child: const FittedBox(
+                  fit: BoxFit.fitWidth,
+                  child: Text(
+                    "・上級食育アドバイザー",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+              ),
+            ),
+
             Padding(
               padding: const EdgeInsets.all(30),
               child: Align(
@@ -106,3 +158,4 @@ class _ProfileState extends State<Profile> {
     );
   }
 }
+

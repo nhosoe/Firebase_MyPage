@@ -20,7 +20,7 @@ class _FreqWordsState extends State<FreqWords> {
               child: FittedBox(
                 fit: BoxFit.fitWidth,
                 child: Text(
-                  "コメダ珈琲店　スマホサイト制作",
+                  "大量の文章から頻出単語を可視化",
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                     decorationStyle: TextDecorationStyle.double,
@@ -32,9 +32,10 @@ class _FreqWordsState extends State<FreqWords> {
             const Padding(
               padding: EdgeInsets.only(top: 30, right: 30, left: 30),
               child: Text(
-                "市場に出ている自動車において、搭載されているカーナビでユーザーからディーラーへ報告されている\n"
-                    "不具合を一覧化したデータ・報告文章の中から頻出単語を調査し、どの機能で不具合の量\n"
-                    "多いかを定量的に解析。これにより、不具合の修正にあたり優先度の判断基準につながった。",
+                "市場に出ている自動車において、搭載されているカーナビでユーザーからディーラーへ\n"
+                    "報告されている不具合を一覧化したデータ・報告文章の中から頻出単語を調査。\n\n"
+                    "不具合が多い機能(ナビ、Audioなど)を定量的に解析。\n"
+                    "これにより、修正する不具合に対する優先度の判断基準につながった。",
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -49,7 +50,7 @@ class _FreqWordsState extends State<FreqWords> {
                     padding: EdgeInsets.only(top: 30.0),
                     child: FittedBox(
                       child: Text(
-                        "※実際の結果はお客様の機密情報で提示できないためイメージ図",
+                        "※機密情報で実際の結果は提示できないため下記イメージ",
                         style: TextStyle(
                           fontSize: 16,
                         ),
@@ -64,7 +65,7 @@ class _FreqWordsState extends State<FreqWords> {
                       child: Text(
                         "https://www.nikkei.com/article/DGXZQOUA060VB0W1A201C2000000/",
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 12,
                           color: Colors.blueAccent,
                         ),
                       ),
@@ -72,7 +73,7 @@ class _FreqWordsState extends State<FreqWords> {
                   ),
                   const SizedBox(
                     //color:Colors.blue,
-                    width: 300,
+                    width: 350,
                     height: 200,
                     child: Image(image: AssetImage("assets/images/example_WordCloud.jpg"),
                       fit: BoxFit.cover,

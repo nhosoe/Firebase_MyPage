@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
-class Adlib extends StatefulWidget {
-  const Adlib({Key? key}) : super(key: key);
+class Autowork extends StatefulWidget {
+  const Autowork({Key? key}) : super(key: key);
 
   @override
-  State<Adlib> createState() => _AdlibState();
+  State<Autowork> createState() => _AutoworkState();
 }
 
-class _AdlibState extends State<Adlib> {
+class _AutoworkState extends State<Autowork> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +19,7 @@ class _AdlibState extends State<Adlib> {
               child: FittedBox(
                 fit: BoxFit.fitWidth,
                 child: Text(
-                  "アドリブ演奏練習用Webサイト",
+                  "ルーティンワーク全自動化",
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                     decorationStyle: TextDecorationStyle.double,
@@ -32,9 +31,10 @@ class _AdlibState extends State<Adlib> {
             const Padding(
               padding: EdgeInsets.only(top: 30, right: 30, left: 30),
               child: Text(
-                "ジャズで演奏されるアドリブ演奏の練習用として、ピアノの先生のご助言を頂いてサイトを制作。\n\n"
-                    "アメリカの音楽大学では\"フラッシュカード\"と呼ばれる手法でアドリブ練習をすることがあり、\n"
-                    "それを物理的なカードではなくWebブラウザの画面上に映し出している。",
+                "自動車に搭載されるナビは市場に出す前に検査を実施する。\n\n"
+                    "検査後に検査結果を取りまとめ最終的には管理職への承認が必要。\n"
+                    "その間の工程が複数に分かれていてかつ時間がかかっていた。\n\n"
+                    "それに対して、一連の工程(※)を全自動化。30分→10分に削減することができた。",
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -42,27 +42,22 @@ class _AdlibState extends State<Adlib> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(30),
+              padding: const EdgeInsets.all(10),
               child: Column(
-                children: [
-                  const Padding(
+                children: const [
+                  Padding(
                     padding: EdgeInsets.only(top: 30.0),
-                    child:  Text(
-                      "Webサイトへのリンク",
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
-                    ),
-                  ),
-                  InkWell(
-                    onTap: () async {
-                      await launchUrlString("http://pepe-nari.pepper.jp/");
-                    },
-                    child: const Text(
-                      "http://pepe-nari.pepper.jp/",
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.blueAccent,
+                    child: FittedBox(
+                      child: Text(
+                        "(※)一連の工程\n"
+                            "①検査したソフトバージョン、検査日時、検査実施者を記入\n        ↓\n"
+                            "②検査の際に撮影した画像を資料に貼り付けて、明るさとコントラストを調整\n        ↓\n"
+                            "③検査結果資料が複数あれば、同様に①②のフローを実行\n        ↓\n"
+                            "④検査結果資料を１つのフォルダに入れて、zip圧縮\n        ↓\n"
+                            "⑤zip圧縮したものをメールに貼り付けて、管理職へ送信",
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ),

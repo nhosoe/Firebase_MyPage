@@ -3,7 +3,7 @@ import 'package:my_home_page/pages/work_detail/aggregation_of_worktime.dart';
 import 'package:my_home_page/pages/work_detail/adlib.dart';
 import 'package:my_home_page/pages/work_detail/frequently_appearing_words.dart';
 import 'package:my_home_page/pages/work_detail/komeda.dart';
-import 'package:my_home_page/pages/work_detail/seikabutsu.dart';
+import 'package:my_home_page/pages/work_detail/autowork.dart';
 import 'package:my_home_page/pages/work_detail/syucchoshinsei.dart';
 import 'package:my_home_page/pages/work_detail/twitter_vs_apple.dart';
 import 'package:my_home_page/pages/work_detail/wordpress.dart';
@@ -260,7 +260,7 @@ class _WorkState extends State<Work> {
                           ),
                           child: const FittedBox(
                             child: Text(
-                              "・SNS上の口コミよる商品売り上げへの影響度調査",
+                              "・SNSの口コミと購買行動への影響度調査",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 24,
@@ -390,7 +390,7 @@ class _WorkState extends State<Work> {
                               ),
                               child: const FittedBox(
                                 child: Text(
-                                  "・全社員の勤務表から稼働時間集計",
+                                  "・全社員の勤務時間の集計・給与計算",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 24,
@@ -441,7 +441,7 @@ class _WorkState extends State<Work> {
                               ),
                               child: const FittedBox(
                                 child: Text(
-                                  "・出張申請システム 自動申請",
+                                  "・出張申請システムの申請手続き効率化",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 24
@@ -492,7 +492,7 @@ class _WorkState extends State<Work> {
                               ),
                               child: const FittedBox(
                                 child: Text(
-                                  "・成果物とりまとめ自動化ツール",
+                                  "・ルーティンワーク全自動化",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 24,
@@ -503,7 +503,7 @@ class _WorkState extends State<Work> {
                                 Navigator.of(context).push(
                                   PageRouteBuilder(
                                     pageBuilder: (context, animation, secondaryAnimation) {
-                                      return const Seikabutsu();
+                                      return const Autowork();
                                     },
                                     transitionsBuilder: (context, animation, secondaryAnimation, child) {
                                       const double begin = 0;

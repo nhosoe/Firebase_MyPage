@@ -21,7 +21,7 @@ class _TwitterAppleState extends State<TwitterApple> {
               child: FittedBox(
                 fit: BoxFit.fitWidth,
                 child: Text(
-                  "SNS上の口コミよる商品売り上げへの影響度調査",
+                  "SNSの口コミと購買行動への影響度調査",
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                     decorationStyle: TextDecorationStyle.double,
@@ -35,9 +35,9 @@ class _TwitterAppleState extends State<TwitterApple> {
               child: Text(
                     "Twitter上での口コミ効果が、商品の売れ行きにどう影響しているかを調査するため、\n"
                     "Apple社のモバイル端末 iPhone・iPod向けアプリケーションのダウンロードサービスである\n"
-                    " 「iTunes App Store」 を対象とした。\n"
+                    " 「iTunes App Store」 を対象とした。\n\n"
                     "統計解析の結果として、iTunes App Store ランキング急上昇前にはリツイートの増加が\n"
-                        "見られたが、特にゲームアプリが顕著であることが判明。\n"
+                        "見られたが、特にゲームアプリが顕著であることが判明。\n\n"
                     "また、ランキング急上昇はリツイートの数よりも、リツイートの元となるツイートを発信した\n"
                     "特定のユーザーが重要であることを明らかにした。",
                 style: TextStyle(
@@ -89,7 +89,7 @@ class _TwitterAppleState extends State<TwitterApple> {
                   const Padding(
                     padding: EdgeInsets.only(top: 10.0),
                     child: Text(
-                      "情報処理学会 山下記念研究賞を受賞研究",
+                      "情報処理学会 山下記念研究賞の受賞研究",
                       style: TextStyle(
                         fontSize: 16,
                       ),

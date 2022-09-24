@@ -22,39 +22,35 @@ class _TopPageState extends State<TopPage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(top: 0),
-              child: Container(
+            const Padding(
+              padding: EdgeInsets.only(top: 0),
+              child: SizedBox(
                 //color:Colors.blue,
                 width: 600,
                 height: 300,
-                child: const Image(image: AssetImage("assets/images/kinkazan.jpg"),
+                child: Image(image: AssetImage("assets/images/kinkazan.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 10, left: 10),
-              child: Container(
-                child: const FittedBox(
-                  fit: BoxFit.fitWidth,
-                  child: Text(
-                    "2022/8/19 岐阜の金華山山頂にて。地元に生まれてよかったと思わせてくれる景色。",
-                    style: TextStyle(fontSize: 14),
-                  ),
+            const Padding(
+              padding: EdgeInsets.only(right: 10, left: 10),
+              child: FittedBox(
+                fit: BoxFit.fitWidth,
+                child: Text(
+                  "2022/8/19 岐阜の金華山山頂にて。地元に生まれてよかったと思わせてくれる景色。",
+                  style: TextStyle(fontSize: 14),
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 50),
+              padding: const EdgeInsets.only(top: 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    //width: 100,
-                    //height: 100,
-                    width: MediaQuery.of(context).size.width*0.12,
-                    height: MediaQuery.of(context).size.height*0.18,
+                    width: MediaQuery.of(context).size.width*0.09,
+                    height: MediaQuery.of(context).size.height*0.12,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(

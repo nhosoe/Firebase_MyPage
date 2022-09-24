@@ -65,6 +65,8 @@ flutter:
     - assets/images/profile.jpg
     - assets/images/komeda.jpg
     - assets/images/example_WordCloud.jpg
+    - assets/images/kinmu_image.jpg
+    - assets/images/syucchoshinsei.jpg
 
   fonts:
     - family: YuseiMagic

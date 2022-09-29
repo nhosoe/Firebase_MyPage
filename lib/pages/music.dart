@@ -93,7 +93,7 @@ class _MusicState extends State<Music> {
                       fit: BoxFit.fitWidth,
                       child: Text(
                         "2018/2/11\n一緒に働いてる方とバンド結成\n"
-                            "ボーカルが風邪で欠席、急遽ドラマーが唄うことに",
+                            "ボーカルが欠席、急遽ドラマーが唄うことに",
                         style: TextStyle(fontSize: 12),
                       ),
                     ),
